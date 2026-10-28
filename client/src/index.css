@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@theme {
+  --color-forest: #183C32;
+  --color-forest-light: #24533f;
+  --color-cream: #F7F2E8;
+  --color-gold: #C7A56B;
+  --color-charcoal: #252724;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+body { @apply bg-cream text-charcoal font-sans antialiased; }
+h1, h2, h3 { @apply font-serif; }
+@utility btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition disabled:opacity-50 disabled:cursor-not-allowed; }
+@utility btn-primary { @apply btn bg-forest text-cream hover:bg-forest-light; }
+@utility btn-gold { @apply btn bg-gold text-charcoal hover:brightness-105; }
+@utility btn-ghost { @apply btn border border-forest/20 text-forest hover:bg-forest/5; }
+.card { @apply rounded-2xl bg-white shadow-[0_8px_30px_rgba(24,60,50,0.06)]; }
+.input { @apply w-full rounded-xl border border-charcoal/15 bg-white px-4 py-3 text-sm outline-none focus:border-forest focus:ring-2 focus:ring-forest/15; }
+.label { @apply mb-1 block text-sm font-medium; }
+.container-x { @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8; }

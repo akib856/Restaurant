@@ -1,0 +1,13 @@
+# Manual browser test checklist
+- [ ] Home, menu, dish, cart, checkout at 375px, 768px, 1280px widths — no horizontal scroll.
+- [ ] Add a dish with required option (pizza size) — Add button disabled until chosen; price updates.
+- [ ] Sold-out dish (Iced Latte) shows "Sold out" and cannot be added.
+- [ ] Cart survives a page refresh.
+- [ ] Coupon WELCOME10 on a ৳500+ order shows a discount at checkout; invalid code shows an error.
+- [ ] Delivery shows delivery fee; pickup shows ৳0 and restaurant address.
+- [ ] Double-click "Place order" → only one order appears in admin.
+- [ ] Guest can see their own order page; a different browser gets "Order not found".
+- [ ] Admin: accept → preparing → out for delivery → completed; invalid buttons never appear.
+- [ ] Admin: Mark cash collected → payment shows paid; dashboard revenue updates.
+- [ ] Customer account → cancel a pending order works; after admin confirms, cancel button disappears.
+- [ ] Online payment option is disabled until a provider is configured.
